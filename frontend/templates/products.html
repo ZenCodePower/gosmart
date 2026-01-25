@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez tous les modèles GOSMART - Du vintage au moderne, trouvez le support smartphone qui vous correspond.">
+    <title data-fr="Produits | GOSMART" data-en="Products | GOSMART">Produits | GOSMART</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="/" class="logo">GO<span>SMART</span></a>
+            <ul class="nav-links">
+                <li><a href="/" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="/products" class="active" data-fr="Produits" data-en="Products">Produits</a></li>
+                <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+                <li>
+                    <div class="lang-switch">
+                        <button class="lang-btn active" data-lang="fr">FR</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="/" data-fr="Accueil" data-en="Home">Accueil</a>
+        <a href="/products" data-fr="Produits" data-en="Products">Produits</a>
+        <a href="/about" data-fr="À propos" data-en="About">À propos</a>
+        <a href="/contact" data-fr="Contact" data-en="Contact">Contact</a>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section style="padding: 180px 0 80px; background: var(--gradient-dark);">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 0;">
+                <span class="section-tag" data-fr="Collection" data-en="Collection">Collection</span>
+                <h1 data-fr="Nos Modèles" data-en="Our Models">Nos Modèles</h1>
+                <p data-fr="Du design rétro-vintage au style moderne épuré, découvrez la gamme complète GOSMART." data-en="From retro-vintage design to sleek modern style, discover the complete GOSMART range.">Du design rétro-vintage au style moderne épuré, découvrez la gamme complète GOSMART.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Models Overview -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-fr="Vue d'ensemble" data-en="Overview">Vue d'ensemble</h2>
+                <p data-fr="Tous les modèles GOSMART en un coup d'œil" data-en="All GOSMART models at a glance">Tous les modèles GOSMART en un coup d'œil</p>
+            </div>
+            <div class="gallery-item" style="aspect-ratio: 16/9; max-width: 1000px; margin: 0 auto;" onclick="openLightbox('/static/media/full_models.png')">
+                <img src="/static/media/full_models.png" alt="Tous les modèles GOSMART" style="object-fit: contain; background: var(--secondary);">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title" data-fr="Cliquez pour agrandir" data-en="Click to enlarge">Cliquez pour agrandir</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vintage Model Section -->
+    <section style="background: var(--secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Édition Vintage" data-en="Vintage Edition">Édition Vintage</span>
+                <h2 data-fr="Modèle Téléphone d'Antan" data-en="Retro Phone Model">Modèle Téléphone d'Antan</h2>
+                <p data-fr="Un clin d'œil nostalgique au téléphone classique, allié à la technologie moderne." data-en="A nostalgic nod to the classic phone, combined with modern technology.">Un clin d'œil nostalgique au téléphone classique, allié à la technologie moderne.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('/static/media/oldschool_1.jpg')">
+                    <img src="/static/media/oldschool_1.jpg" alt="GOSMART Vintage" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Vue principale" data-en="Main view">Vue principale</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/oldschool_incliné.jpg')">
+                    <img src="/static/media/oldschool_incliné.jpg" alt="GOSMART Vintage incliné" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Vue inclinée" data-en="Tilted view">Vue inclinée</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/oldschool_couché.jpg')">
+                    <img src="/static/media/oldschool_couché.jpg" alt="GOSMART Vintage couché" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Position couchée" data-en="Flat position">Position couchée</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/oldschool_derrière.jpg')">
+                    <img src="/static/media/oldschool_derrière.jpg" alt="GOSMART Vintage arrière" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Vue arrière" data-en="Back view">Vue arrière</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Original Model Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Édition Originale" data-en="Original Edition">Édition Originale</span>
+                <h2 data-fr="Modèle Original" data-en="Original Model">Modèle Original</h2>
+                <p data-fr="Le design signature GOSMART avec ses finitions bicolores distinctives." data-en="The signature GOSMART design with its distinctive two-tone finishes.">Le design signature GOSMART avec ses finitions bicolores distinctives.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('/static/media/original_model.jpg')">
+                    <img src="/static/media/original_model.jpg" alt="GOSMART Original" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Vue principale" data-en="Main view">Vue principale</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/original_incl1.jpg')">
+                    <img src="/static/media/original_incl1.jpg" alt="GOSMART Original incliné" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Inclinaison 1" data-en="Tilt 1">Inclinaison 1</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/original_incl_2.jpg')">
+                    <img src="/static/media/original_incl_2.jpg" alt="GOSMART Original incliné 2" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Inclinaison 2" data-en="Tilt 2">Inclinaison 2</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/original_derriere.jpg')">
+                    <img src="/static/media/original_derriere.jpg" alt="GOSMART Original arrière" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Vue arrière" data-en="Back view">Vue arrière</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Model with Phone -->
+    <section style="background: var(--secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="En situation" data-en="In use">En situation</span>
+                <h2 data-fr="Avec votre smartphone" data-en="With your smartphone">Avec votre smartphone</h2>
+                <p data-fr="Visualisez le GOSMART en action avec un smartphone." data-en="See the GOSMART in action with a smartphone.">Visualisez le GOSMART en action avec un smartphone.</p>
+            </div>
+            <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="gallery-item" onclick="openLightbox('/static/media/full_model.jpg')">
+                    <img src="/static/media/full_model.jpg" alt="GOSMART avec téléphone" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Vue complète" data-en="Complete view">Vue complète</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/oldschool_tel.jpg')">
+                    <img src="/static/media/oldschool_tel.jpg" alt="GOSMART Vintage avec téléphone" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Modèle Vintage avec téléphone" data-en="Vintage model with phone">Modèle Vintage avec téléphone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototypes Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="R&D" data-en="R&D">R&D</span>
+                <h2 data-fr="Prototypes & Développement" data-en="Prototypes & Development">Prototypes & Développement</h2>
+                <p data-fr="De la conception CAO à la réalisation : découvrez le processus de création." data-en="From CAD design to realization: discover the creation process.">De la conception CAO à la réalisation : découvrez le processus de création.</p>
+            </div>
+            <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="gallery-item" onclick="openLightbox('/static/media/proto_1.jpg')">
+                    <img src="/static/media/proto_1.jpg" alt="Prototype GOSMART 1" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Prototype - Vue 1" data-en="Prototype - View 1">Prototype - Vue 1</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/proto_2.jpg')">
+                    <img src="/static/media/proto_2.jpg" alt="Prototype GOSMART 2" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Prototype - Vue 2" data-en="Prototype - View 2">Prototype - Vue 2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="background: var(--gradient-1); padding: 100px 0; text-align: center;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 20px;" data-fr="Intéressé par nos produits ?" data-en="Interested in our products?">Intéressé par nos produits ?</h2>
+            <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; max-width: 600px; margin: 0 auto 40px;" data-fr="Contactez-nous pour en savoir plus sur les possibilités de partenariat ou de licence." data-en="Contact us to learn more about partnership or licensing opportunities.">Contactez-nous pour en savoir plus sur les possibilités de partenariat ou de licence.</p>
+            <a href="/contact" class="btn" style="background: white; color: var(--accent);" data-fr="Nous contacter" data-en="Contact us">Nous contacter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">GO<span>SMART</span></a>
+                    <p data-fr="Support smartphone multi-orientable innovant avec système de facettes breveté." data-en="Innovative multi-orientable smartphone support with patented facet system.">Support smartphone multi-orientable innovant avec système de facettes breveté.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                        <li><a href="/products" data-fr="Produits" data-en="Products">Produits</a></li>
+                        <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
+                        <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-fr="Légal" data-en="Legal">Légal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-fr="Brevet" data-en="Patent">Brevet</a></li>
+                        <li><a href="#" data-fr="Mentions légales" data-en="Legal notice">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="/contact" data-fr="Formulaire" data-en="Form">Formulaire</a></li>
+                        <li><a href="#" data-fr="Partenariat" data-en="Partnership">Partenariat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 GOSMART - Jean-Michel Didier. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+                <div class="social-links">
+                    <a href="#" title="LinkedIn">in</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
+        <div class="lightbox-content">
+            <img src="" alt="GOSMART" id="lightbox-img">
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

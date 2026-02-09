@@ -139,10 +139,10 @@ function setupContactForm() {
             formData.append('subject', subject.value);
         }
         
-        // Add newsletter preference
+        // Add newsletter preference (backend expects "true" or "false" string)
         const newsletter = document.getElementById('newsletter');
         if (newsletter) {
-            formData.append('newsletter', newsletter.checked);
+            formData.append('newsletter', newsletter.checked ? 'true' : 'false');
         }
         
         // Disable submit button

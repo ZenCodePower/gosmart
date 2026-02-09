@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GOSMART - Principes techniques, vues schématiques et modes d'utilisation du support smartphone.">
+    <title data-fr="Principes | GOSMART" data-en="Principles | GOSMART">Principes | GOSMART</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container">
+            <a href="/" class="logo">GO<span>SMART</span></a>
+            <ul class="nav-links">
+                <li><a href="/" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="/products" data-fr="Produits" data-en="Products">Produits</a></li>
+                <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="/principles" class="active" data-fr="Principes" data-en="Principles">Principes</a></li>
+                <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+                <li>
+                    <div class="lang-switch">
+                        <button class="lang-btn active" data-lang="fr">FR</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="/" data-fr="Accueil" data-en="Home">Accueil</a>
+        <a href="/products" data-fr="Produits" data-en="Products">Produits</a>
+        <a href="/about" data-fr="À propos" data-en="About">À propos</a>
+        <a href="/principles" data-fr="Principes" data-en="Principles">Principes</a>
+        <a href="/contact" data-fr="Contact" data-en="Contact">Contact</a>
+        <div class="lang-switch">
+            <button class="lang-btn active" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section style="padding: 180px 0 80px; background: var(--gradient-dark);">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 0;">
+                <span class="section-tag" data-fr="Technique" data-en="Technical">Technique</span>
+                <h1 data-fr="Principes" data-en="Principles">Principes</h1>
+                <p data-fr="Vues schématiques et modes d'utilisation du GOSMART." data-en="Schematical views and usage modes of GOSMART.">Vues schématiques et modes d'utilisation du GOSMART.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schematical Views / Vues Schématiques -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Schémas" data-en="Schematics">Schémas</span>
+                <h2 data-fr="Vues Schématiques" data-en="Schematical Views">Vues Schématiques</h2>
+            </div>
+            <div class="principles-schematics-grid">
+                <div class="principles-schematic-item gallery-item" onclick="openLightbox('/static/media/principles/Vue_Eclatee_Schematiq2.JPG')">
+                    <img src="/static/media/principles/Vue_Eclatee_Schematiq2.JPG" alt="Vue éclatée schématique" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="principles-placeholder" style="display: none; position: absolute; inset: 0; background: var(--primary); border: 2px dashed var(--glass-border); border-radius: var(--radius); align-items: center; justify-content: center; color: var(--text-secondary);">
+                        <span data-fr="Vue éclatée – ajoutez Vue_Eclatee_Schematiq2.JPG dans static/media/principles/" data-en="Exploded view – add Vue_Eclatee_Schematiq2.JPG in static/media/principles/">Vue éclatée</span>
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Vue éclatée" data-en="Exploded view">Vue éclatée</span>
+                    </div>
+                </div>
+                <div class="principles-schematic-item gallery-item" onclick="openLightbox('/static/media/principles/Vue_Perspective_Schematiq2.JPG')">
+                    <img src="/static/media/principles/Vue_Perspective_Schematiq2.JPG" alt="Vue perspective schématique" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="principles-placeholder" style="display: none; position: absolute; inset: 0; background: var(--primary); border: 2px dashed var(--glass-border); border-radius: var(--radius); align-items: center; justify-content: center; color: var(--text-secondary);">
+                        <span data-fr="Vue perspective – ajoutez Vue_Perspective_Schematiq2.JPG" data-en="Perspective view – add Vue_Perspective_Schematiq2.JPG">Vue perspective</span>
+                    </div>
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Vue perspective" data-en="Perspective view">Vue perspective</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modes d'utilisation (FR) - Wall-Mountable Model + Plans -->
+    <section style="background: var(--secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Modes d'utilisation</span>
+                <h2>Modes d'utilisation</h2>
+                <p data-fr="Modèle mural fixable et plans associés." data-en="Wall-mountable model and associated plans.">Modèle mural fixable et plans associés.</p>
+            </div>
+
+            <!-- Wall-Mountable Model -->
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 24px;" data-fr="Modèle Mural Fixable" data-en="Wall-Mountable Model">Modèle Mural Fixable</h3>
+                <p style="margin-bottom: 24px; color: var(--text-secondary);" data-fr="Fixez votre GOSMART au mur pour un usage fixe et pratique." data-en="Mount your GOSMART on the wall for fixed and practical use.">Fixez votre GOSMART au mur pour un usage fixe et pratique.</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/mural/mural_autostable.jpeg')">
+                        <img src="/static/media/mural/mural_autostable.jpeg" alt="GOSMART Mural" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/mural/mural-autostable-2.jpeg')">
+                        <img src="/static/media/mural/mural-autostable-2.jpeg" alt="GOSMART Mural" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/mural/mural-autostable-3.jpeg')">
+                        <img src="/static/media/mural/mural-autostable-3.jpeg" alt="GOSMART Mural" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span>
+                        </div>
+                    </div>
+                </div>
+                <h4 style="color: var(--text-secondary); margin-top: 32px; margin-bottom: 16px; font-size: 1rem;" data-fr="Prototypes Mural" data-en="Wall prototypes">Prototypes Mural</h4>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/MUR1.jpeg')">
+                        <img src="/static/media/prototypes/MUR1.jpeg" alt="Mural 1" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">MUR1</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/MUR2.jpeg')">
+                        <img src="/static/media/prototypes/MUR2.jpeg" alt="Mural 2" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">MUR2</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/MUR3.jpeg')">
+                        <img src="/static/media/prototypes/MUR3.jpeg" alt="Mural 3" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">MUR3</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/MUR4.jpeg')">
+                        <img src="/static/media/prototypes/MUR4.jpeg" alt="Mural 4" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">MUR4</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/MUR5.jpeg')">
+                        <img src="/static/media/prototypes/MUR5.jpeg" alt="Mural 5" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">MUR5</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/MUR6.jpeg')">
+                        <img src="/static/media/prototypes/MUR6.jpeg" alt="Mural 6" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">MUR6</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plans -->
+            <div>
+                <h3 style="color: var(--accent); margin-bottom: 24px;" data-fr="Plans" data-en="Plans">Plans</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/PLAN1.jpeg')">
+                        <img src="/static/media/prototypes/PLAN1.jpeg" alt="Plan 1" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">PLAN1</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/PLAN2.jpeg')">
+                        <img src="/static/media/prototypes/PLAN2.jpeg" alt="Plan 2" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">PLAN2</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/PLAN3.jpeg')">
+                        <img src="/static/media/prototypes/PLAN3.jpeg" alt="Plan 3" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">PLAN3</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototypes & Développement -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="R&D" data-en="R&D">R&D</span>
+                <h2 data-fr="Prototypes & Développement" data-en="Prototypes & Development">Prototypes & Développement</h2>
+                <p data-fr="De la conception CAO à la réalisation : découvrez le processus de création." data-en="From CAD design to realization: discover the creation process.">De la conception CAO à la réalisation : découvrez le processus de création.</p>
+            </div>
+
+            <!-- Autostable Prototypes -->
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 30px; text-align: center;" data-fr="Prototypes Autostable" data-en="Autostable Prototypes">Prototypes Autostable</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Autostable 15°.jpeg')">
+                        <img src="/static/media/prototypes/Autostable 15°.jpeg" alt="Autostable 15°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">15°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Autostable 45°.jpeg')">
+                        <img src="/static/media/prototypes/Autostable 45°.jpeg" alt="Autostable 45°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">45°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Autostable 75°.jpeg')">
+                        <img src="/static/media/prototypes/Autostable 75°.jpeg" alt="Autostable 75°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">75°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/autostable.jpeg')">
+                        <img src="/static/media/prototypes/autostable.jpeg" alt="Autostable" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title" data-fr="Vue générale" data-en="General view">Vue générale</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coque Prototypes -->
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 30px; text-align: center;" data-fr="Prototypes Coque" data-en="Case Prototypes">Prototypes Coque</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Coque 15°.jpeg')">
+                        <img src="/static/media/prototypes/Coque 15°.jpeg" alt="Coque 15°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">15°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Coque 45°.jpeg')">
+                        <img src="/static/media/prototypes/Coque 45°.jpeg" alt="Coque 45°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">45°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Coque 75°.jpeg')">
+                        <img src="/static/media/prototypes/Coque 75°.jpeg" alt="Coque 75°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">75°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Handle Prototypes -->
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 30px; text-align: center;" data-fr="Prototypes Poignée" data-en="Handle Prototypes">Prototypes Poignée</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Handle 15°.jpeg')">
+                        <img src="/static/media/prototypes/Handle 15°.jpeg" alt="Handle 15°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">15°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Handle 45°.jpeg')">
+                        <img src="/static/media/prototypes/Handle 45°.jpeg" alt="Handle 45°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">45°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Handle 75°.jpeg')">
+                        <img src="/static/media/prototypes/Handle 75°.jpeg" alt="Handle 75°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">75°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mini Prototypes -->
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 30px; text-align: center;" data-fr="Prototypes Mini" data-en="Mini Prototypes">Prototypes Mini</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Mini 15°.jpeg')">
+                        <img src="/static/media/prototypes/Mini 15°.jpeg" alt="Mini 15°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">15°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Mini 45°.jpeg')">
+                        <img src="/static/media/prototypes/Mini 45°.jpeg" alt="Mini 45°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">45°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Mini 75°.jpeg')">
+                        <img src="/static/media/prototypes/Mini 75°.jpeg" alt="Mini 75°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">75°</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Mini.jpeg')">
+                        <img src="/static/media/prototypes/Mini.jpeg" alt="Mini" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title" data-fr="Vue générale" data-en="General view">Vue générale</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Micro Prototypes -->
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 30px; text-align: center;" data-fr="Prototype Micro" data-en="Micro Prototype">Prototype Micro</h3>
+                <div class="gallery-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Micro 75°.jpeg')">
+                        <img src="/static/media/prototypes/Micro 75°.jpeg" alt="Micro 75°" loading="lazy">
+                        <div class="gallery-item-overlay">
+                            <span class="gallery-item-title">75°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo">GO<span>SMART</span></a>
+                    <p data-fr="Support smartphone multi-orientable innovant avec système de facettes breveté." data-en="Innovative multi-orientable smartphone support with patented facet system.">Support smartphone multi-orientable innovant avec système de facettes breveté.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-fr="Navigation" data-en="Navigation">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="/" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                        <li><a href="/products" data-fr="Produits" data-en="Products">Produits</a></li>
+                        <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
+                        <li><a href="/principles" data-fr="Principes" data-en="Principles">Principes</a></li>
+                        <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-fr="Légal" data-en="Legal">Légal</h4>
+                    <ul class="footer-links">
+                        <li><a href="/static/media/brevet/10864793_Courrier_de_notification (10).pdf" target="_blank" data-fr="Brevet" data-en="Patent">Brevet</a></li>
+                        <li><a href="#" data-fr="Mentions légales" data-en="Legal notice">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-fr="Contact" data-en="Contact">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="/contact" data-fr="Formulaire" data-en="Form">Formulaire</a></li>
+                        <li><a href="#" data-fr="Partenariat" data-en="Partnership">Partenariat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 GOSMART - Jean-Michel Didier. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+                <div class="social-links">
+                    <a href="#" title="LinkedIn">in</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">×</button>
+        <div class="lightbox-content">
+            <img src="" alt="GOSMART" id="lightbox-img">
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

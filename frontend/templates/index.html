@@ -18,6 +18,7 @@
                 <li><a href="/" class="active" data-fr="Accueil" data-en="Home">Accueil</a></li>
                 <li><a href="/products" data-fr="Produits" data-en="Products">Produits</a></li>
                 <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="/principles" data-fr="Principes" data-en="Principles">Principes</a></li>
                 <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
                 <li>
                     <div class="lang-switch">
@@ -39,6 +40,7 @@
         <a href="/" data-fr="Accueil" data-en="Home">Accueil</a>
         <a href="/products" data-fr="Produits" data-en="Products">Produits</a>
         <a href="/about" data-fr="À propos" data-en="About">À propos</a>
+        <a href="/principles" data-fr="Principes" data-en="Principles">Principes</a>
         <a href="/contact" data-fr="Contact" data-en="Contact">Contact</a>
         <div class="lang-switch">
             <button class="lang-btn active" data-lang="fr">FR</button>
@@ -78,7 +80,7 @@
         </div>
     </section>
 
-    <!-- Video Demo Section -->
+    <!-- Video Demo Section - 3 slots: Demonstration, Mural utilisation, More to come -->
     <section class="video-section" id="demo">
         <div class="container">
             <div class="section-header">
@@ -86,12 +88,33 @@
                 <h2 data-fr="Découvrez GOSMART en action" data-en="Discover GOSMART in action">Découvrez GOSMART en action</h2>
                 <p data-fr="Retrouvez votre téléphone, saisissez-le les mains grasses, regardez votre podcast préféré... GOSMART simplifie tout." data-en="Find your phone, grab it with greasy hands, watch your favorite podcast... GOSMART simplifies everything.">Retrouvez votre téléphone, saisissez-le les mains grasses, regardez votre podcast préféré... GOSMART simplifie tout.</p>
             </div>
-            <div class="video-container">
-                <video id="demo-video" controls poster="/static/media/IMG_0565.jpeg">
-                    <source src="/static/media/IMG_0940.MOV" type="video/quicktime">
-                    <source src="/static/media/IMG_0940.MOV" type="video/mp4">
-                    <span data-fr="Votre navigateur ne supporte pas la vidéo." data-en="Your browser does not support video.">Votre navigateur ne supporte pas la vidéo.</span>
-                </video>
+            <div class="video-demo-grid">
+                <div class="video-demo-slot">
+                    <div class="video-container">
+                        <video id="demo-video" controls poster="/static/media/IMG_0565.jpeg">
+                            <source src="/static/media/IMG_0940.MOV" type="video/quicktime">
+                            <source src="/static/media/IMG_0940.MOV" type="video/mp4">
+                            <span data-fr="Votre navigateur ne supporte pas la vidéo." data-en="Your browser does not support video.">Votre navigateur ne supporte pas la vidéo.</span>
+                        </video>
+                    </div>
+                    <h3 class="video-demo-title" data-fr="Démonstration" data-en="Demonstration">Démonstration</h3>
+                </div>
+                <div class="video-demo-slot">
+                    <div class="video-container video-placeholder" data-video-slot="mural">
+                        <div class="video-placeholder-inner">
+                            <span class="video-placeholder-label" data-fr="Mural – Vidéo à venir" data-en="Wall mount – Video coming soon">Mural – Vidéo à venir</span>
+                        </div>
+                    </div>
+                    <h3 class="video-demo-title" data-fr="Utilisation murale" data-en="Wall-mount use">Utilisation murale</h3>
+                </div>
+                <div class="video-demo-slot">
+                    <div class="video-container video-placeholder" data-video-slot="extra">
+                        <div class="video-placeholder-inner">
+                            <span class="video-placeholder-label" data-fr="Vidéo à venir" data-en="Video coming soon">Vidéo à venir</span>
+                        </div>
+                    </div>
+                    <h3 class="video-demo-title" data-fr="À suivre" data-en="More to come">À suivre</h3>
+                </div>
             </div>
         </div>
     </section>
@@ -138,7 +161,7 @@
         </div>
     </section>
 
-    <!-- Use Cases Section -->
+    <!-- Use Cases Section - Add more usecase-card blocks below to add cases -->
     <section class="usecases-section gallery-section">
         <div class="container">
             <div class="section-header">
@@ -162,6 +185,16 @@
                     <div class="usecase-content">
                         <h3 data-fr="Routine matinale" data-en="Morning routine">Routine matinale</h3>
                         <p data-fr="Regardez votre série préférée ou écoutez un podcast pendant que vous vous rasez ou vous brossez les dents." data-en="Watch your favorite series or listen to a podcast while shaving or brushing your teeth.">Regardez votre série préférée ou écoutez un podcast pendant que vous vous rasez ou vous brossez les dents.</p>
+                    </div>
+                </div>
+                <!-- Duplicate the block below to add another use case: usecase-card > usecase-image (img) + usecase-content (h3 + p) -->
+                <div class="usecase-card">
+                    <div class="usecase-image">
+                        <img src="/static/media/IMG_0565.jpeg" alt="GOSMART use case">
+                    </div>
+                    <div class="usecase-content">
+                        <h3 data-fr="Nouveau cas d'usage" data-en="New use case">Nouveau cas d'usage</h3>
+                        <p data-fr="Description à personnaliser. Remplacez l'image et le texte." data-en="Description to customize. Replace image and text.">Description à personnaliser. Remplacez l'image et le texte.</p>
                     </div>
                 </div>
             </div>
@@ -309,6 +342,7 @@
                         <li><a href="/" data-fr="Accueil" data-en="Home">Accueil</a></li>
                         <li><a href="/products" data-fr="Produits" data-en="Products">Produits</a></li>
                         <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
+                        <li><a href="/principles" data-fr="Principes" data-en="Principles">Principes</a></li>
                         <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
                     </ul>
                 </div>

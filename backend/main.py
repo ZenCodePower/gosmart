@@ -65,9 +65,18 @@ async def contact_page(request: Request):
     lang = request.cookies.get("lang", "fr")
     return templates.TemplateResponse("contact.html", {"request": request, "lang": lang})
 
+@app.get("/principles", response_class=HTMLResponse)
+async def principles_page(request: Request):
+    """Principles / Principes page - schematical views and usage modes"""
+    lang = request.cookies.get("lang", "fr")
+    return templates.TemplateResponse("principles.html", {"request": request, "lang": lang})
+
 # ================================
 # API Routes
 # ================================
+
+# Contact form: all messages are sent to this address and marked URGENT
+CONTACT_RECIPIENT_EMAIL = "janmidi@gmail.com"
 
 @app.post("/api/contact")
 async def submit_contact(
@@ -78,13 +87,17 @@ async def submit_contact(
     subject: str = Form("info"),
     newsletter: str = Form("false")
 ):
-    """Handle contact form submission"""
+    """Handle contact form submission. Messages are for janmidi@gmail.com and marked URGENT."""
     try:
+        subject_display = f"[URGENT] {subject}"
         contact_data = {
             "name": name,
             "email": email,
             "message": message,
             "subject": subject,
+            "subject_display": subject_display,
+            "to_email": CONTACT_RECIPIENT_EMAIL,
+            "urgent": True,
             "newsletter": newsletter == "true",
             "language": language
         }

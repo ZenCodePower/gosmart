@@ -4,19 +4,40 @@ Site web professionnel pour présenter l'invention GOSMART - Support Smartphone 
 
 ## 🚀 Démarrage rapide
 
+### Pour Cloner le Projet (Nouvel Ordinateur)
+
 ```bash
-# 1. Créer l'environnement virtuel
+# 1. Cloner le projet depuis GitHub
+git clone https://github.com/ZenCodePower/gosmart.git
+cd gosmart
+
+# 2. Créer l'environnement virtuel
 python3 -m venv venv
 
-# 2. Activer l'environnement et installer les dépendances
-source venv/bin/activate
+# 3. Activer l'environnement et installer les dépendances
+source venv/bin/activate  # Sur Windows : venv\Scripts\activate
 pip install -r requirements.txt
 
-# 3. Démarrer le serveur
+# 4. Démarrer le serveur
+./start.sh
+```
+
+### Pour un Projet Déjà Cloné
+
+```bash
+# 1. Activer l'environnement virtuel
+source venv/bin/activate  # Sur Windows : venv\Scripts\activate
+
+# 2. Démarrer le serveur
 ./start.sh
 ```
 
 Le site sera accessible sur **http://localhost:8001** (ou 8002 si 8001 est occupé)
+
+> 📖 **Guides détaillés** :
+> - `GUIDE_CLONAGE.md` - Guide complet de clonage
+> - `INSTRUCTIONS_SIMPLES.md` - Pour débutants absolus
+> - `TESTER_LOCAL.md` - Tester sans déployer
 
 ## 📁 Structure du Projet
 

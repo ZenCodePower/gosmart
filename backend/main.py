@@ -1,10 +1,12 @@
 from fastapi import FastAPI, Form, Request
-from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.responses import HTMLResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.types import Message
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -15,6 +17,43 @@ load_dotenv()
 BASE_DIR = Path(__file__).parent.parent
 
 app = FastAPI(title="GOSMART - Support Smartphone Multi-Orientable")
+
+# Middleware to add cache headers to static files
+class CacheMiddleware(BaseHTTPMiddleware):
+    """Middleware to add cache headers to static file responses"""
+    
+    async def dispatch(self, request, call_next):
+        response = await call_next(request)
+        
+        # Only add cache headers to static file requests
+        path = request.url.path
+        
+        if any(path.startswith(prefix) for prefix in ["/static/", "/media/", "/css/", "/js/"]):
+            # Determine cache duration based on file type
+            if any(path.endswith(ext) for ext in [".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".ico", ".jpeg"]):
+                # Images: 1 year cache
+                cache_control = "public, max-age=31536000, immutable"
+            elif any(path.endswith(ext) for ext in [".css", ".js"]):
+                # CSS/JS: 1 year cache
+                cache_control = "public, max-age=31536000, immutable"
+            elif any(path.endswith(ext) for ext in [".MOV", ".mov", ".mp4", ".MP4", ".webm"]):
+                # Videos: 1 month cache (large files)
+                cache_control = "public, max-age=2592000"
+            elif any(path.endswith(ext) for ext in [".woff", ".woff2", ".ttf", ".eot"]):
+                # Fonts: 1 year cache
+                cache_control = "public, max-age=31536000, immutable"
+            else:
+                # Other files: 1 hour cache
+                cache_control = "public, max-age=3600"
+            
+            # Add cache headers
+            response.headers["Cache-Control"] = cache_control
+            response.headers["Expires"] = (datetime.utcnow() + timedelta(days=365)).strftime("%a, %d %b %Y %H:%M:%S GMT")
+        
+        return response
+
+# Add cache middleware
+app.add_middleware(CacheMiddleware)
 
 # Mount static files (CSS, JS, images, videos)
 # /static/* for canonical URLs; /media, /css, /js so requests without /static prefix also work

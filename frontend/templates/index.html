@@ -8,6 +8,10 @@
     <title data-fr="GOSMART | Support Smartphone Innovant" data-en="GOSMART | Innovative Smartphone Support">GOSMART | Support Smartphone Innovant</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="icon" type="image/x-icon" href="/static/media/IMG_0565.jpeg">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/static/css/style.css" as="style">
+    <link rel="preload" href="/static/js/main.js" as="script">
+    <link rel="preload" href="/static/media/IMG_0565.jpeg" as="image">
 </head>
 <body>
     <!-- Navigation -->
@@ -71,7 +75,7 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <img src="/static/media/IMG_0565.jpeg" alt="GOSMART Models" class="hero-image">
+                <img src="/static/media/IMG_0565.jpeg" alt="GOSMART Models" class="hero-image" loading="eager" fetchpriority="high">
             </div>
         </div>
         <div class="scroll-indicator">
@@ -89,7 +93,7 @@
                 <p data-fr="Retrouvez votre téléphone, saisissez-le les mains grasses, regardez votre podcast préféré... GOSMART simplifie tout." data-en="Find your phone, grab it with greasy hands, watch your favorite podcast... GOSMART simplifies everything.">Retrouvez votre téléphone, saisissez-le les mains grasses, regardez votre podcast préféré... GOSMART simplifie tout.</p>
             </div>
             <div class="video-container">
-                <video id="demo-video" controls muted playsinline poster="/static/media/IMG_0565.jpeg">
+                <video id="demo-video" controls muted playsinline poster="/static/media/IMG_0565.jpeg" preload="metadata">
                     <source src="/static/media/Final_video_demo.MOV" type="video/quicktime">
                     <source src="/static/media/Final_video_demo.MOV" type="video/mp4">
                     <span data-fr="Votre navigateur ne supporte pas la vidéo." data-en="Your browser does not support video.">Votre navigateur ne supporte pas la vidéo.</span>
@@ -137,7 +141,7 @@
                 <h2 data-fr="Orientations possibles" data-en="Possible orientations">Orientations possibles</h2>
             </div>
             <div class="video-container">
-                <video controls muted playsinline poster="/static/media/IMG_0565.jpeg">
+                <video controls muted playsinline poster="/static/media/IMG_0565.jpeg" preload="metadata">
                     <source src="/static/media/VIDEO-Auto-Table-Perm 3 orient.MOV" type="video/quicktime">
                     <source src="/static/media/VIDEO-Auto-Table-Perm 3 orient.MOV" type="video/mp4">
                 </video>
@@ -181,7 +185,7 @@
             <div class="video-demo-grid">
                 <div class="video-demo-slot">
                     <div class="video-container">
-                        <video controls muted playsinline>
+                        <video controls muted playsinline preload="metadata">
                             <source src="/static/media/VIDEO-Auto-Mural-Perm 3.MOV" type="video/quicktime">
                             <source src="/static/media/VIDEO-Auto-Mural-Perm 3.MOV" type="video/mp4">
                         </video>
@@ -190,7 +194,7 @@
                 </div>
                 <div class="video-demo-slot">
                     <div class="video-container">
-                        <video controls muted playsinline>
+                        <video controls muted playsinline preload="metadata">
                             <source src="/static/media/VIDEO-Auto-Mural-Amov 1 Bureau.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -198,7 +202,7 @@
                 </div>
                 <div class="video-demo-slot">
                     <div class="video-container">
-                        <video controls muted playsinline>
+                        <video controls muted playsinline preload="metadata">
                             <source src="/static/media/VIDEO-Auto-Mural-Perm 4 Cuisine.MOV" type="video/quicktime">
                             <source src="/static/media/VIDEO-Auto-Mural-Perm 4 Cuisine.MOV" type="video/mp4">
                         </video>
@@ -220,7 +224,7 @@
             <div class="usecases-grid">
                 <div class="usecase-card">
                     <div class="usecase-image">
-                        <img src="/static/media/mes_ptit_dej.jpg" alt="GOSMART petit-déjeuner">
+                        <img src="/static/media/mes_ptit_dej.jpg" alt="GOSMART petit-déjeuner" loading="lazy">
                     </div>
                     <div class="usecase-content">
                         <h3 data-fr="Petit-déjeuner connecté" data-en="Connected breakfast">Petit-déjeuner connecté</h3>
@@ -229,7 +233,7 @@
                 </div>
                 <div class="usecase-card">
                     <div class="usecase-image">
-                        <img src="/static/media/mes_rasage.jpg" alt="GOSMART rasage">
+                        <img src="/static/media/mes_rasage.jpg" alt="GOSMART rasage" loading="lazy">
                     </div>
                     <div class="usecase-content">
                         <h3 data-fr="Routine matinale" data-en="Morning routine">Routine matinale</h3>

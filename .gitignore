@@ -24,7 +24,9 @@ contacts.json
 .DS_Store
 Thumbs.db
 
-
 # Environment variables
 .env
 .env.local
+
+# Note: Large video files are managed by Git LFS (see .gitattributes)
+# They are NOT ignored so they can be tracked by Git LFS

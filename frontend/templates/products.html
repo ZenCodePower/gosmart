@@ -15,8 +15,8 @@
             <ul class="nav-links">
                 <li><a href="/" data-fr="Accueil" data-en="Home">Accueil</a></li>
                 <li><a href="/products" class="active" data-fr="Produits" data-en="Products">Produits</a></li>
-                <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
                 <li><a href="/principles" data-fr="Principes" data-en="Principles">Principes</a></li>
+                <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
                 <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
                 <li>
                     <div class="lang-switch">
@@ -37,8 +37,8 @@
     <div class="mobile-nav" id="mobile-nav">
         <a href="/" data-fr="Accueil" data-en="Home">Accueil</a>
         <a href="/products" data-fr="Produits" data-en="Products">Produits</a>
-        <a href="/about" data-fr="À propos" data-en="About">À propos</a>
         <a href="/principles" data-fr="Principes" data-en="Principles">Principes</a>
+        <a href="/about" data-fr="À propos" data-en="About">À propos</a>
         <a href="/contact" data-fr="Contact" data-en="Contact">Contact</a>
         <div class="lang-switch">
             <button class="lang-btn active" data-lang="fr">FR</button>
@@ -73,38 +73,7 @@
         </div>
     </section>
 
-    <!-- Handle Vintage Model Section -->
-    <section style="background: var(--secondary);">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-fr="Édition Vintage" data-en="Vintage Edition">Édition Vintage</span>
-                <h2 data-fr="Modèle Poignée Vintage" data-en="Vintage Handle Model">Modèle Poignée Vintage</h2>
-                <p data-fr="Un clin d'œil nostalgique au téléphone classique, allié à la technologie moderne." data-en="A nostalgic nod to the classic phone, combined with modern technology.">Un clin d'œil nostalgique au téléphone classique, allié à la technologie moderne.</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item" onclick="openLightbox('/static/media/handle/IMG_0569.jpeg')">
-                    <img src="/static/media/handle/IMG_0569.jpeg" alt="GOSMART Poignée Vintage" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('/static/media/handle/IMG_0570.jpeg')">
-                    <img src="/static/media/handle/IMG_0570.jpeg" alt="GOSMART Poignée Vintage" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('/static/media/handle/IMG_0571.jpeg')">
-                    <img src="/static/media/handle/IMG_0571.jpeg" alt="GOSMART Poignée Vintage" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Autostable Model Section -->
+    <!-- 1. Autostable -->
     <section>
         <div class="container">
             <div class="section-header">
@@ -112,103 +81,239 @@
                 <h2 data-fr="Modèle Autostable" data-en="Autostable Model">Modèle Autostable</h2>
                 <p data-fr="Le modèle polyvalent et autostable pour tous les usages." data-en="The versatile and self-stable model for all uses.">Le modèle polyvalent et autostable pour tous les usages.</p>
             </div>
+            <h4 style="color: var(--text-secondary); margin-bottom: 16px; font-size: 1rem;" data-fr="Socle embarqué / détaché" data-en="Integrated / detached base">Socle embarqué / détaché</h4>
+            <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 700px;">
+                <div class="gallery-item" onclick="openLightbox('/static/media/Autostable socle embarqué.jpeg')">
+                    <img src="/static/media/Autostable socle embarqué.jpeg" alt="Autostable socle embarqué" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Socle embarqué" data-en="Integrated base">Socle embarqué</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/Autostable socle détaché.jpeg')">
+                    <img src="/static/media/Autostable socle détaché.jpeg" alt="Autostable socle détaché" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Socle détaché" data-en="Detached base">Socle détaché</span></div>
+                </div>
+            </div>
+            <h4 style="color: var(--text-secondary); margin: 24px 0 16px; font-size: 1rem;" data-fr="Collection" data-en="Collection">Collection</h4>
             <div class="gallery-grid">
-                <div class="gallery-item" onclick="openLightbox('/static/media/autostable/IMG_0566.jpeg')">
-                    <img src="/static/media/autostable/IMG_0566.jpeg" alt="GOSMART Autostable" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/autostable/IMG_0566_15.jpeg')">
+                    <img src="/static/media/autostable/IMG_0566_15.jpeg" alt="GOSMART Autostable" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span></div>
                 </div>
-                <div class="gallery-item" onclick="openLightbox('/static/media/autostable/IMG_0567.jpeg')">
-                    <img src="/static/media/autostable/IMG_0567.jpeg" alt="GOSMART Autostable" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/autostable/IMG_0567_45.jpeg')">
+                    <img src="/static/media/autostable/IMG_0567_45.jpeg" alt="GOSMART Autostable" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span></div>
                 </div>
-                <div class="gallery-item" onclick="openLightbox('/static/media/autostable/IMG_0568.jpeg')">
-                    <img src="/static/media/autostable/IMG_0568.jpeg" alt="GOSMART Autostable" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/autostable/IMG_0568_75.jpeg')">
+                    <img src="/static/media/autostable/IMG_0568_75.jpeg" alt="GOSMART Autostable" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Coque Model Section -->
+    <!-- 2. Poignée -->
     <section style="background: var(--secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Édition Vintage" data-en="Vintage Edition">Édition Vintage</span>
+                <h2 data-fr="Modèle Poignée" data-en="Handle Model">Modèle Poignée</h2>
+                <p data-fr="Un clin d'œil nostalgique au téléphone classique, allié à la technologie moderne." data-en="A nostalgic nod to the classic phone, combined with modern technology.">Un clin d'œil nostalgique au téléphone classique, allié à la technologie moderne.</p>
+            </div>
+            <h4 style="color: var(--text-secondary); margin-bottom: 16px; font-size: 1rem;" data-fr="Socle embarqué / détaché" data-en="Integrated / detached base">Socle embarqué / détaché</h4>
+            <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 700px;">
+                <div class="gallery-item" onclick="openLightbox('/static/media/Poignée socle embarqué.jpeg')">
+                    <img src="/static/media/Poignée socle embarqué.jpeg" alt="Poignée socle embarqué" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Socle embarqué" data-en="Integrated base">Socle embarqué</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/Poignée socle détaché.jpeg')">
+                    <img src="/static/media/Poignée socle détaché.jpeg" alt="Poignée socle détaché" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Socle détaché" data-en="Detached base">Socle détaché</span></div>
+                </div>
+            </div>
+            <h4 style="color: var(--text-secondary); margin: 24px 0 16px; font-size: 1rem;" data-fr="Collection" data-en="Collection">Collection</h4>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('/static/media/handle/IMG_0569.jpeg')">
+                    <img src="/static/media/handle/IMG_0569.jpeg" alt="GOSMART Poignée" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/handle/IMG_0570.jpeg')">
+                    <img src="/static/media/handle/IMG_0570.jpeg" alt="GOSMART Poignée" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/handle/IMG_0571.jpeg')">
+                    <img src="/static/media/handle/IMG_0571.jpeg" alt="GOSMART Poignée" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Coque -->
+    <section>
         <div class="container">
             <div class="section-header">
                 <span class="section-tag" data-fr="Modèle Coque" data-en="Case Model">Modèle Coque</span>
                 <h2 data-fr="Modèle Coque - Batterie Externe Intégrable" data-en="Case Model - Integrable External Battery">Modèle Coque - Batterie Externe Intégrable</h2>
                 <p data-fr="Un modèle compact avec possibilité d'intégrer une batterie externe pour recharger votre smartphone." data-en="A compact model with the possibility of integrating an external battery to charge your smartphone.">Un modèle compact avec possibilité d'intégrer une batterie externe pour recharger votre smartphone.</p>
             </div>
+            <h4 style="color: var(--text-secondary); margin-bottom: 16px; font-size: 1rem;" data-fr="Socle embarqué / détaché" data-en="Integrated / detached base">Socle embarqué / détaché</h4>
+            <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 700px;">
+                <div class="gallery-item" onclick="openLightbox('/static/media/Coque socle embarqué.jpeg')">
+                    <img src="/static/media/Coque socle embarqué.jpeg" alt="Coque socle embarqué" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Socle embarqué" data-en="Integrated base">Socle embarqué</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/Coque socle détaché.jpeg')">
+                    <img src="/static/media/Coque socle détaché.jpeg" alt="Coque socle détaché" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Socle détaché" data-en="Detached base">Socle détaché</span></div>
+                </div>
+            </div>
+            <h4 style="color: var(--text-secondary); margin: 24px 0 16px; font-size: 1rem;" data-fr="Collection" data-en="Collection">Collection</h4>
             <div class="gallery-grid">
                 <div class="gallery-item" onclick="openLightbox('/static/media/coque/IMG_0572.jpeg')">
                     <img src="/static/media/coque/IMG_0572.jpeg" alt="GOSMART Coque" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span>
-                    </div>
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox('/static/media/coque/IMG_0573.jpeg')">
                     <img src="/static/media/coque/IMG_0573.jpeg" alt="GOSMART Coque" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span>
-                    </div>
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox('/static/media/coque/IMG_0574.jpeg')">
                     <img src="/static/media/coque/IMG_0574.jpeg" alt="GOSMART Coque" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span>
-                    </div>
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox('/static/media/coque/IMG_0575.jpeg')">
                     <img src="/static/media/coque/IMG_0575.jpeg" alt="GOSMART Coque" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 4" data-en="View 4">Vue 4</span>
-                    </div>
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 4" data-en="View 4">Vue 4</span></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox('/static/media/coque/IMG_0576.jpeg')">
                     <img src="/static/media/coque/IMG_0576.jpeg" alt="GOSMART Coque" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 5" data-en="View 5">Vue 5</span>
-                    </div>
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 5" data-en="View 5">Vue 5</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mini Model Section -->
-    <section>
+    <!-- 4. Mini -->
+    <section style="background: var(--secondary);">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag" data-fr="Modèle Mini" data-en="Mini Model">Modèle Mini</span>
                 <h2 data-fr="Modèle Mini" data-en="Mini Model">Modèle Mini</h2>
                 <p data-fr="Le modèle compact et léger, parfait pour les déplacements." data-en="The compact and lightweight model, perfect for travel.">Le modèle compact et léger, parfait pour les déplacements.</p>
             </div>
+            <h4 style="color: var(--text-secondary); margin-bottom: 16px; font-size: 1rem;" data-fr="Socle embarqué / détaché" data-en="Integrated / detached base">Socle embarqué / détaché</h4>
+            <div class="gallery-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 700px;">
+                <div class="gallery-item" onclick="openLightbox('/static/media/Mini socle embarqué.jpeg')">
+                    <img src="/static/media/Mini socle embarqué.jpeg" alt="Mini socle embarqué" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Socle embarqué" data-en="Integrated base">Socle embarqué</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/Mini socle détaché.jpeg')">
+                    <img src="/static/media/Mini socle détaché.jpeg" alt="Mini socle détaché" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Socle détaché" data-en="Detached base">Socle détaché</span></div>
+                </div>
+            </div>
+            <h4 style="color: var(--text-secondary); margin: 24px 0 16px; font-size: 1rem;" data-fr="Collection" data-en="Collection">Collection</h4>
             <div class="gallery-grid">
                 <div class="gallery-item" onclick="openLightbox('/static/media/mini/IMG_0577.jpeg')">
                     <img src="/static/media/mini/IMG_0577.jpeg" alt="GOSMART Mini" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span>
-                    </div>
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox('/static/media/mini/IMG_0578.jpeg')">
                     <img src="/static/media/mini/IMG_0578.jpeg" alt="GOSMART Mini" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span>
-                    </div>
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox('/static/media/mini/IMG_0579.jpeg')">
                     <img src="/static/media/mini/IMG_0579.jpeg" alt="GOSMART Mini" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span>
-                    </div>
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span></div>
                 </div>
                 <div class="gallery-item" onclick="openLightbox('/static/media/mini/IMG_0580.jpeg')">
                     <img src="/static/media/mini/IMG_0580.jpeg" alt="GOSMART Mini" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Vue 4" data-en="View 4">Vue 4</span>
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 4" data-en="View 4">Vue 4</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototypes (images FreeCAD) - sans Micro -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="R&D" data-en="R&D">R&D</span>
+                <h2 data-fr="Prototypes (images FreeCAD)" data-en="Prototypes (FreeCAD images)">Prototypes (images FreeCAD)</h2>
+                <p data-fr="De la conception CAO à la réalisation : découvrez le processus de création." data-en="From CAD design to realization: discover the creation process.">De la conception CAO à la réalisation : découvrez le processus de création.</p>
+            </div>
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 30px; text-align: center;" data-fr="Prototypes Autostable" data-en="Autostable Prototypes">Prototypes Autostable</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Autostable 15°.jpeg')">
+                        <img src="/static/media/prototypes/Autostable 15°.jpeg" alt="Autostable 15°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">15°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Autostable 45°.jpeg')">
+                        <img src="/static/media/prototypes/Autostable 45°.jpeg" alt="Autostable 45°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">45°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Autostable 75°.jpeg')">
+                        <img src="/static/media/prototypes/Autostable 75°.jpeg" alt="Autostable 75°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">75°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/autostable.jpeg')">
+                        <img src="/static/media/prototypes/autostable.jpeg" alt="Autostable" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue générale" data-en="General view">Vue générale</span></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 30px; text-align: center;" data-fr="Prototypes Coque" data-en="Case Prototypes">Prototypes Coque</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Coque 15°.jpeg')">
+                        <img src="/static/media/prototypes/Coque 15°.jpeg" alt="Coque 15°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">15°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Coque 45°.jpeg')">
+                        <img src="/static/media/prototypes/Coque 45°.jpeg" alt="Coque 45°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">45°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Coque 75°.jpeg')">
+                        <img src="/static/media/prototypes/Coque 75°.jpeg" alt="Coque 75°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">75°</span></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 30px; text-align: center;" data-fr="Prototypes Poignée" data-en="Handle Prototypes">Prototypes Poignée</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Handle 15°.jpeg')">
+                        <img src="/static/media/prototypes/Handle 15°.jpeg" alt="Handle 15°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">15°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Handle 45°.jpeg')">
+                        <img src="/static/media/prototypes/Handle 45°.jpeg" alt="Handle 45°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">45°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Handle 75°.jpeg')">
+                        <img src="/static/media/prototypes/Handle 75°.jpeg" alt="Handle 75°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">75°</span></div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-bottom: 60px;">
+                <h3 style="color: var(--accent); margin-bottom: 30px; text-align: center;" data-fr="Prototypes Mini" data-en="Mini Prototypes">Prototypes Mini</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Mini 15°.jpeg')">
+                        <img src="/static/media/prototypes/Mini 15°.jpeg" alt="Mini 15°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">15°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Mini 45°.jpeg')">
+                        <img src="/static/media/prototypes/Mini 45°.jpeg" alt="Mini 45°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">45°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Mini 75°.jpeg')">
+                        <img src="/static/media/prototypes/Mini 75°.jpeg" alt="Mini 75°" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title">75°</span></div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('/static/media/prototypes/Mini.jpeg')">
+                        <img src="/static/media/prototypes/Mini.jpeg" alt="Mini" loading="lazy">
+                        <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue générale" data-en="General view">Vue générale</span></div>
                     </div>
                 </div>
             </div>
@@ -237,15 +342,15 @@
                     <ul class="footer-links">
                         <li><a href="/" data-fr="Accueil" data-en="Home">Accueil</a></li>
                         <li><a href="/products" data-fr="Produits" data-en="Products">Produits</a></li>
-                        <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
                         <li><a href="/principles" data-fr="Principes" data-en="Principles">Principes</a></li>
+                        <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
                         <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4 data-fr="Légal" data-en="Legal">Légal</h4>
                     <ul class="footer-links">
-                        <li><a href="/static/media/brevet/10864793_Courrier_de_notification (10).pdf" target="_blank" data-fr="Brevet" data-en="Patent">Brevet</a></li>
+                        <li><a href="/static/media/brevet/INPI Notification.pdf" target="_blank" data-fr="Brevet" data-en="Patent">Brevet</a></li>
                         <li><a href="#" data-fr="Mentions légales" data-en="Legal notice">Mentions légales</a></li>
                     </ul>
                 </div>

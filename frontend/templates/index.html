@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GOSMART - Support smartphone multi-orientable innovant avec système de facettes breveté. Ergonomique, design, et pratique.">
-    <meta name="keywords" content="GOSMART, support smartphone, brevet, invention, ergonomique, MagSafe, support magnétique">
+    <meta name="description" data-fr="GOSMART - Support smartphone multi-orientable innovant avec système de facettes breveté. Ergonomique, design, et pratique." data-en="GOSMART - Innovative multi-orientable smartphone support with patented facet system. Ergonomic, design, and practical." content="GOSMART - Support smartphone multi-orientable innovant avec système de facettes breveté. Ergonomique, design, et pratique.">
+    <meta name="keywords" content="GOSMART, support smartphone, brevet, invention, ergonomique, MagSafe, support magnétique, smartphone holder, patent, invention, ergonomic, MagSafe, magnetic support">
     <title data-fr="GOSMART | Support Smartphone Innovant" data-en="GOSMART | Innovative Smartphone Support">GOSMART | Support Smartphone Innovant</title>
     <link rel="stylesheet" href="/static/css/style.css">
-    <link rel="icon" type="image/x-icon" href="/static/media/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/static/media/IMG_0565.jpeg">
 </head>
 <body>
     <!-- Navigation -->
@@ -17,8 +17,8 @@
             <ul class="nav-links">
                 <li><a href="/" class="active" data-fr="Accueil" data-en="Home">Accueil</a></li>
                 <li><a href="/products" data-fr="Produits" data-en="Products">Produits</a></li>
-                <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
                 <li><a href="/principles" data-fr="Principes" data-en="Principles">Principes</a></li>
+                <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
                 <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
                 <li>
                     <div class="lang-switch">
@@ -39,8 +39,8 @@
     <div class="mobile-nav" id="mobile-nav">
         <a href="/" data-fr="Accueil" data-en="Home">Accueil</a>
         <a href="/products" data-fr="Produits" data-en="Products">Produits</a>
-        <a href="/about" data-fr="À propos" data-en="About">À propos</a>
         <a href="/principles" data-fr="Principes" data-en="Principles">Principes</a>
+        <a href="/about" data-fr="À propos" data-en="About">À propos</a>
         <a href="/contact" data-fr="Contact" data-en="Contact">Contact</a>
         <div class="lang-switch">
             <button class="lang-btn active" data-lang="fr">FR</button>
@@ -80,7 +80,7 @@
         </div>
     </section>
 
-    <!-- Video Demo Section - 3 slots: Demonstration, Mural utilisation, More to come -->
+    <!-- Video Demo Section - une seule vidéo, sans son -->
     <section class="video-section" id="demo">
         <div class="container">
             <div class="section-header">
@@ -88,33 +88,194 @@
                 <h2 data-fr="Découvrez GOSMART en action" data-en="Discover GOSMART in action">Découvrez GOSMART en action</h2>
                 <p data-fr="Retrouvez votre téléphone, saisissez-le les mains grasses, regardez votre podcast préféré... GOSMART simplifie tout." data-en="Find your phone, grab it with greasy hands, watch your favorite podcast... GOSMART simplifies everything.">Retrouvez votre téléphone, saisissez-le les mains grasses, regardez votre podcast préféré... GOSMART simplifie tout.</p>
             </div>
+            <div class="video-container">
+                <video id="demo-video" controls muted playsinline poster="/static/media/IMG_0565.jpeg">
+                    <source src="/static/media/Final_video_demo.MOV" type="video/quicktime">
+                    <source src="/static/media/Final_video_demo.MOV" type="video/mp4">
+                    <span data-fr="Votre navigateur ne supporte pas la vidéo." data-en="Your browser does not support video.">Votre navigateur ne supporte pas la vidéo.</span>
+                </video>
+            </div>
+            <p style="text-align: center; margin-top: 20px; color: var(--text-secondary); font-size: 0.95rem;" data-fr="Démonstration générale et utilisations possibles de GOSMART" data-en="General demonstration and possible uses of GOSMART">Démonstration générale et utilisations possibles de GOSMART</p>
+        </div>
+    </section>
+
+    <!-- Prise en main - 3 photos -->
+    <section class="gallery-section" style="background: var(--secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Prise en main" data-en="Handling">Prise en main</span>
+                <h2 data-fr="Prise en main" data-en="Handling">Prise en main</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('/static/media/PHOTO-Auto-Main-Poignée.jpeg')">
+                    <img src="/static/media/PHOTO-Auto-Main-Poignée.jpeg" alt="GOSMART Poignée" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Poignée" data-en="Handle">Poignée</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/PHOTO-Auto-Main-Grip.jpeg')">
+                    <img src="/static/media/PHOTO-Auto-Main-Grip.jpeg" alt="GOSMART Grip" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Grip" data-en="Grip">Grip</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/PHOTO-Auto-Main-Plateau.jpeg')">
+                    <img src="/static/media/PHOTO-Auto-Main-Plateau.jpeg" alt="GOSMART Plateau" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Plateau" data-en="Plate">Plateau</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vidéo Table - 3 orientations -->
+    <section class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Vidéo" data-en="Video">Vidéo</span>
+                <h2 data-fr="Orientations possibles" data-en="Possible orientations">Orientations possibles</h2>
+            </div>
+            <div class="video-container">
+                <video controls muted playsinline poster="/static/media/IMG_0565.jpeg">
+                    <source src="/static/media/VIDEO-Auto-Table-Perm 3 orient.MOV" type="video/quicktime">
+                    <source src="/static/media/VIDEO-Auto-Table-Perm 3 orient.MOV" type="video/mp4">
+                </video>
+            </div>
+            <p style="text-align: center; margin-top: 20px; color: var(--text-secondary); font-size: 0.95rem;" data-fr="3 orientations possibles : angles à 15, 45 et 75 degrés" data-en="3 possible orientations: angles at 15, 45 and 75 degrees">3 orientations possibles : angles à 15, 45 et 75 degrés</p>
+        </div>
+    </section>
+
+    <!-- Modèle Mural Fixable - 3 photos (déplacé depuis Principes) -->
+    <section class="gallery-section" style="background: var(--secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Modèle Mural" data-en="Wall model">Modèle Mural</span>
+                <h2 data-fr="Modèle Mural Fixable" data-en="Wall-Mountable Model">Modèle Mural Fixable</h2>
+                <p data-fr="Fixez votre GOSMART au mur pour un usage fixe et pratique." data-en="Mount your GOSMART on the wall for fixed and practical use.">Fixez votre GOSMART au mur pour un usage fixe et pratique.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('/static/media/mural/mural_autostable.jpeg')">
+                    <img src="/static/media/mural/mural_autostable.jpeg" alt="GOSMART Mural" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 1" data-en="View 1">Vue 1</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/mural/mural-autostable-2.jpeg')">
+                    <img src="/static/media/mural/mural-autostable-2.jpeg" alt="GOSMART Mural" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 2" data-en="View 2">Vue 2</span></div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/mural/mural-autostable-3.jpeg')">
+                    <img src="/static/media/mural/mural-autostable-3.jpeg" alt="GOSMART Mural" loading="lazy">
+                    <div class="gallery-item-overlay"><span class="gallery-item-title" data-fr="Vue 3" data-en="View 3">Vue 3</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vidéos Mural -->
+    <section class="video-section" style="background: var(--secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Vidéos" data-en="Videos">Vidéos</span>
+                <h2 data-fr="Utilisation murale" data-en="Wall-mount use">Utilisation murale</h2>
+            </div>
             <div class="video-demo-grid">
                 <div class="video-demo-slot">
                     <div class="video-container">
-                        <video id="demo-video" controls poster="/static/media/IMG_0565.jpeg">
-                            <source src="/static/media/IMG_0940.MOV" type="video/quicktime">
-                            <source src="/static/media/IMG_0940.MOV" type="video/mp4">
-                            <span data-fr="Votre navigateur ne supporte pas la vidéo." data-en="Your browser does not support video.">Votre navigateur ne supporte pas la vidéo.</span>
+                        <video controls muted playsinline>
+                            <source src="/static/media/VIDEO-Auto-Mural-Perm 3.MOV" type="video/quicktime">
+                            <source src="/static/media/VIDEO-Auto-Mural-Perm 3.MOV" type="video/mp4">
                         </video>
                     </div>
-                    <h3 class="video-demo-title" data-fr="Démonstration" data-en="Demonstration">Démonstration</h3>
+                    <h3 class="video-demo-title" data-fr="Mural – 3 positions" data-en="Wall – 3 positions">Mural – 3 positions</h3>
                 </div>
                 <div class="video-demo-slot">
-                    <div class="video-container video-placeholder" data-video-slot="mural">
-                        <div class="video-placeholder-inner">
-                            <span class="video-placeholder-label" data-fr="Mural – Vidéo à venir" data-en="Wall mount – Video coming soon">Mural – Vidéo à venir</span>
-                        </div>
+                    <div class="video-container">
+                        <video controls muted playsinline>
+                            <source src="/static/media/VIDEO-Auto-Mural-Amov 1 Bureau.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <h3 class="video-demo-title" data-fr="Utilisation murale" data-en="Wall-mount use">Utilisation murale</h3>
+                    <h3 class="video-demo-title" data-fr="Bureau" data-en="Desk">Bureau</h3>
                 </div>
                 <div class="video-demo-slot">
-                    <div class="video-container video-placeholder" data-video-slot="extra">
-                        <div class="video-placeholder-inner">
-                            <span class="video-placeholder-label" data-fr="Vidéo à venir" data-en="Video coming soon">Vidéo à venir</span>
-                        </div>
+                    <div class="video-container">
+                        <video controls muted playsinline>
+                            <source src="/static/media/VIDEO-Auto-Mural-Perm 4 Cuisine.MOV" type="video/quicktime">
+                            <source src="/static/media/VIDEO-Auto-Mural-Perm 4 Cuisine.MOV" type="video/mp4">
+                        </video>
                     </div>
-                    <h3 class="video-demo-title" data-fr="À suivre" data-en="More to come">À suivre</h3>
+                    <h3 class="video-demo-title" data-fr="Cuisine" data-en="Kitchen">Cuisine</h3>
                 </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: var(--text-secondary); font-size: 0.95rem; max-width: 800px; margin-left: auto; margin-right: auto;" data-fr="Utilisations possibles du support mural, fixer un support sur n'importe quelle surface et utilisez GOSMART où et quand vous voulez !" data-en="Possible uses of the wall mount, fix a support on any surface and use GOSMART wherever and whenever you want!">Utilisations possibles du support mural, fixer un support sur n'importe quelle surface et utilisez GOSMART où et quand vous voulez !</p>
+        </div>
+    </section>
+
+    <!-- Use Cases Section - Add more usecase-card blocks below to add cases -->
+    <section class="usecases-section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Cas d'usage" data-en="Use cases">Cas d'usage</span>
+                <h2 data-fr="Conçu pour votre quotidien" data-en="Designed for your daily life">Conçu pour votre quotidien</h2>
+            </div>
+            <div class="usecases-grid">
+                <div class="usecase-card">
+                    <div class="usecase-image">
+                        <img src="/static/media/mes_ptit_dej.jpg" alt="GOSMART petit-déjeuner">
+                    </div>
+                    <div class="usecase-content">
+                        <h3 data-fr="Petit-déjeuner connecté" data-en="Connected breakfast">Petit-déjeuner connecté</h3>
+                        <p data-fr="Consultez vos mails, regardez les actualités ou suivez une recette les mains libres pendant votre petit-déjeuner." data-en="Check your emails, watch the news or follow a recipe hands-free during breakfast.">Consultez vos mails, regardez les actualités ou suivez une recette les mains libres pendant votre petit-déjeuner.</p>
+                    </div>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-image">
+                        <img src="/static/media/mes_rasage.jpg" alt="GOSMART rasage">
+                    </div>
+                    <div class="usecase-content">
+                        <h3 data-fr="Routine matinale" data-en="Morning routine">Routine matinale</h3>
+                        <p data-fr="Regardez votre série préférée ou écoutez un podcast pendant que vous vous rasez ou vous brossez les dents." data-en="Watch your favorite series or listen to a podcast while shaving or brushing your teeth.">Regardez votre série préférée ou écoutez un podcast pendant que vous vous rasez ou vous brossez les dents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview Section -->
+    <section class="gallery-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-fr="Collection" data-en="Collection">Collection</span>
+                <h2 data-fr="Nos modèles" data-en="Our models">Nos modèles</h2>
+                <p data-fr="Du design rétro-vintage au style moderne épuré, trouvez le GOSMART qui vous ressemble." data-en="From retro-vintage design to sleek modern style, find the GOSMART that suits you.">Du design rétro-vintage au style moderne épuré, trouvez le GOSMART qui vous ressemble.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('/static/media/autostable/IMG_0566_15.jpeg')">
+                    <img src="/static/media/autostable/IMG_0566_15.jpeg" alt="GOSMART Autostable" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Modèle Autostable" data-en="Autostable Model">Modèle Autostable</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/handle/IMG_0569.jpeg')">
+                    <img src="/static/media/handle/IMG_0569.jpeg" alt="GOSMART Poignée" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Modèle Poignée" data-en="Handle Model">Modèle Poignée</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/coque/IMG_0572.jpeg')">
+                    <img src="/static/media/coque/IMG_0572.jpeg" alt="GOSMART Coque" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Modèle Coque" data-en="Case Model">Modèle Coque</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('/static/media/mini/IMG_0579.jpeg')">
+                    <img src="/static/media/mini/IMG_0579.jpeg" alt="GOSMART Mini" loading="lazy">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-title" data-fr="Modèle Mini" data-en="Mini Model">Modèle Mini</span>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="/products" class="btn btn-primary" data-fr="Voir tous les modèles" data-en="See all models">Voir tous les modèles</a>
             </div>
         </div>
     </section>
@@ -157,86 +318,6 @@
                     <h3 data-fr="Design personnalisable" data-en="Customizable design">Design personnalisable</h3>
                     <p data-fr="Du vintage au moderne, plusieurs finitions disponibles. Un objet design qui s'intègre à votre intérieur." data-en="From vintage to modern, several finishes available. A design object that fits your interior.">Du vintage au moderne, plusieurs finitions disponibles. Un objet design qui s'intègre à votre intérieur.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Use Cases Section - Add more usecase-card blocks below to add cases -->
-    <section class="usecases-section gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-fr="Cas d'usage" data-en="Use cases">Cas d'usage</span>
-                <h2 data-fr="Conçu pour votre quotidien" data-en="Designed for your daily life">Conçu pour votre quotidien</h2>
-            </div>
-            <div class="usecases-grid">
-                <div class="usecase-card">
-                    <div class="usecase-image">
-                        <img src="/static/media/mes_ptit_dej.jpg" alt="GOSMART petit-déjeuner">
-                    </div>
-                    <div class="usecase-content">
-                        <h3 data-fr="Petit-déjeuner connecté" data-en="Connected breakfast">Petit-déjeuner connecté</h3>
-                        <p data-fr="Consultez vos mails, regardez les actualités ou suivez une recette les mains libres pendant votre petit-déjeuner." data-en="Check your emails, watch the news or follow a recipe hands-free during breakfast.">Consultez vos mails, regardez les actualités ou suivez une recette les mains libres pendant votre petit-déjeuner.</p>
-                    </div>
-                </div>
-                <div class="usecase-card">
-                    <div class="usecase-image">
-                        <img src="/static/media/mes_rasage.jpg" alt="GOSMART rasage">
-                    </div>
-                    <div class="usecase-content">
-                        <h3 data-fr="Routine matinale" data-en="Morning routine">Routine matinale</h3>
-                        <p data-fr="Regardez votre série préférée ou écoutez un podcast pendant que vous vous rasez ou vous brossez les dents." data-en="Watch your favorite series or listen to a podcast while shaving or brushing your teeth.">Regardez votre série préférée ou écoutez un podcast pendant que vous vous rasez ou vous brossez les dents.</p>
-                    </div>
-                </div>
-                <!-- Duplicate the block below to add another use case: usecase-card > usecase-image (img) + usecase-content (h3 + p) -->
-                <div class="usecase-card">
-                    <div class="usecase-image">
-                        <img src="/static/media/IMG_0565.jpeg" alt="GOSMART use case">
-                    </div>
-                    <div class="usecase-content">
-                        <h3 data-fr="Nouveau cas d'usage" data-en="New use case">Nouveau cas d'usage</h3>
-                        <p data-fr="Description à personnaliser. Remplacez l'image et le texte." data-en="Description to customize. Replace image and text.">Description à personnaliser. Remplacez l'image et le texte.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Preview Section -->
-    <section class="gallery-preview">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-fr="Collection" data-en="Collection">Collection</span>
-                <h2 data-fr="Nos modèles" data-en="Our models">Nos modèles</h2>
-                <p data-fr="Du design rétro-vintage au style moderne épuré, trouvez le GOSMART qui vous ressemble." data-en="From retro-vintage design to sleek modern style, find the GOSMART that suits you.">Du design rétro-vintage au style moderne épuré, trouvez le GOSMART qui vous ressemble.</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item" onclick="openLightbox('/static/media/autostable/IMG_0566.jpeg')">
-                    <img src="/static/media/autostable/IMG_0566.jpeg" alt="GOSMART Autostable" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Modèle Autostable" data-en="Autostable Model">Modèle Autostable</span>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('/static/media/coque/IMG_0572.jpeg')">
-                    <img src="/static/media/coque/IMG_0572.jpeg" alt="GOSMART Coque" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Modèle Coque" data-en="Case Model">Modèle Coque</span>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('/static/media/mini/IMG_0579.jpeg')">
-                    <img src="/static/media/mini/IMG_0579.jpeg" alt="GOSMART Mini" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Modèle Mini" data-en="Mini Model">Modèle Mini</span>
-                    </div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('/static/media/handle/IMG_0569.jpeg')">
-                    <img src="/static/media/handle/IMG_0569.jpeg" alt="GOSMART Poignée" loading="lazy">
-                    <div class="gallery-item-overlay">
-                        <span class="gallery-item-title" data-fr="Modèle Poignée" data-en="Handle Model">Modèle Poignée</span>
-                    </div>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="/products" class="btn btn-primary" data-fr="Voir tous les modèles" data-en="See all models">Voir tous les modèles</a>
             </div>
         </div>
     </section>
@@ -323,7 +404,7 @@
             <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; max-width: 600px; margin: 0 auto 40px;" data-fr="Nous recherchons des partenaires industriels et commerciaux pour l'exploitation du brevet GOSMART." data-en="We are looking for industrial and commercial partners to exploit the GOSMART patent.">Nous recherchons des partenaires industriels et commerciaux pour l'exploitation du brevet GOSMART.</p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
                 <a href="/contact" class="btn" style="background: white; color: var(--accent);" data-fr="Contactez-nous" data-en="Contact us">Contactez-nous</a>
-                <a href="/static/media/brevet/10864793_Courrier_de_notification (10).pdf" target="_blank" class="btn btn-secondary" style="border-color: white; color: white;" data-fr="Voir le brevet" data-en="View patent">Voir le brevet</a>
+                <a href="/static/media/brevet/INPI Notification.pdf" target="_blank" class="btn btn-secondary" style="border-color: white; color: white;" data-fr="Voir le brevet" data-en="View patent">Voir le brevet</a>
             </div>
         </div>
     </section>
@@ -341,15 +422,15 @@
                     <ul class="footer-links">
                         <li><a href="/" data-fr="Accueil" data-en="Home">Accueil</a></li>
                         <li><a href="/products" data-fr="Produits" data-en="Products">Produits</a></li>
-                        <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
                         <li><a href="/principles" data-fr="Principes" data-en="Principles">Principes</a></li>
+                        <li><a href="/about" data-fr="À propos" data-en="About">À propos</a></li>
                         <li><a href="/contact" data-fr="Contact" data-en="Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4 data-fr="Légal" data-en="Legal">Légal</h4>
                     <ul class="footer-links">
-                        <li><a href="/static/media/brevet/10864793_Courrier_de_notification (10).pdf" target="_blank" data-fr="Brevet" data-en="Patent">Brevet</a></li>
+                        <li><a href="/static/media/brevet/INPI Notification.pdf" target="_blank" data-fr="Brevet" data-en="Patent">Brevet</a></li>
                         <li><a href="#" data-fr="Mentions légales" data-en="Legal notice">Mentions légales</a></li>
                     </ul>
                 </div>

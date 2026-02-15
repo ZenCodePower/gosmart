@@ -51,6 +51,15 @@ function setLanguage(lang) {
         }
     }
     
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+        const description = metaDescription.getAttribute(`data-${lang}`);
+        if (description) {
+            metaDescription.setAttribute('content', description);
+        }
+    }
+    
     // Update placeholders
     document.querySelectorAll('[data-fr-placeholder]').forEach(element => {
         const placeholder = element.getAttribute(`data-${lang}-placeholder`);

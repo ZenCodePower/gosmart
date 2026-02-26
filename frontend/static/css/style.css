@@ -428,6 +428,38 @@ section {
     font-size: 0.95rem;
 }
 
+.video-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* En dessous de la vidéo (z-index: 1) */
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    pointer-events: none !important; /* Ne bloque jamais les interactions avec la vidéo */
+}
+
+.video-loading::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
 .video-container {
     position: relative;
     border-radius: var(--radius);
@@ -441,6 +473,8 @@ section {
     width: 100%;
     display: block;
     border-radius: var(--radius);
+    position: relative;
+    z-index: 1; /* S'assurer que la vidéo est au-dessus de tout */
 }
 
 .video-overlay {

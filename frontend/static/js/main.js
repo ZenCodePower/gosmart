@@ -172,6 +172,11 @@ function setupContactForm() {
                 body: formData
             });
             
+            // Check if response is ok
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            
             const data = await response.json();
             
             if (data.success) {
@@ -189,10 +194,11 @@ function setupContactForm() {
                 }
             }
         } catch (error) {
+            console.error('Contact form error:', error);
             if (messageDiv) {
                 messageDiv.textContent = currentLang === 'fr' 
-                    ? 'Erreur de connexion. Veuillez réessayer.' 
-                    : 'Connection error. Please try again.';
+                    ? 'Erreur de connexion. Veuillez réessayer plus tard ou contacter directement janmidi@gmail.com' 
+                    : 'Connection error. Please try again later or contact directly janmidi@gmail.com';
                 messageDiv.className = 'form-message error';
                 messageDiv.style.display = 'block';
             }
@@ -213,7 +219,22 @@ function setupVideoPlayer() {
     
     if (!video) return;
     
-    // Auto-play functionality could be added here
+    // Preload metadata and first frames when video becomes visible
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && video.readyState < 2) {
+                // Video is visible, start loading metadata and first frames
+                video.load();
+                observer.unobserve(video);
+            }
+        });
+    }, {
+        rootMargin: '100px' // Start loading 100px before video enters viewport
+    });
+    
+    observer.observe(video);
+    
+    // Handle play event
     video.addEventListener('play', () => {
         if (overlay) overlay.style.display = 'none';
     });
@@ -221,6 +242,16 @@ function setupVideoPlayer() {
     video.addEventListener('pause', () => {
         if (overlay) overlay.style.display = 'flex';
     });
+    
+    // Preload when user hovers over video (optional, for better UX)
+    const videoContainer = video.closest('.video-container');
+    if (videoContainer) {
+        videoContainer.addEventListener('mouseenter', () => {
+            if (video.readyState < 2) {
+                video.load();
+            }
+        }, { once: true });
+    }
 }
 
 // ================================

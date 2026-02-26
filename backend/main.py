@@ -39,6 +39,13 @@ class CacheMiddleware(BaseHTTPMiddleware):
             elif any(path.endswith(ext) for ext in [".MOV", ".mov", ".mp4", ".MP4", ".webm"]):
                 # Videos: 1 month cache (large files)
                 cache_control = "public, max-age=2592000"
+                # Add proper content type and range support for video streaming
+                if path.endswith((".MOV", ".mov")):
+                    response.headers["Content-Type"] = "video/quicktime"
+                elif path.endswith((".mp4", ".MP4")):
+                    response.headers["Content-Type"] = "video/mp4"
+                # Enable range requests for video streaming (important for large files)
+                response.headers["Accept-Ranges"] = "bytes"
             elif any(path.endswith(ext) for ext in [".woff", ".woff2", ".ttf", ".eot"]):
                 # Fonts: 1 year cache
                 cache_control = "public, max-age=31536000, immutable"

@@ -213,26 +213,60 @@ function setupContactForm() {
 // Video Player
 // ================================
 
+// Video quality settings (CSS filter-based simulation)
+const videoQualitySettings = {
+    high: { filter: 'none', label: { fr: 'Haute', en: 'High' } },
+    medium: { filter: 'blur(0.5px)', label: { fr: 'Moyenne', en: 'Medium' } },
+    low: { filter: 'blur(1px) contrast(0.95)', label: { fr: 'Basse', en: 'Low' } }
+};
+
+let currentVideoQuality = localStorage.getItem('videoQuality') || 'medium';
+
 function setupVideoPlayer() {
     const video = document.getElementById('demo-video');
     const overlay = document.querySelector('.video-overlay');
     
+    // Setup quality selector for all video containers
+    setupVideoQualitySelectors();
+    
     if (!video) return;
     
-    // Preload metadata and first frames when video becomes visible
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && video.readyState < 2) {
-                // Video is visible, start loading metadata and first frames
-                video.load();
-                observer.unobserve(video);
-            }
-        });
-    }, {
-        rootMargin: '100px' // Start loading 100px before video enters viewport
+    // Gestion des erreurs de chargement vidéo
+    video.addEventListener('error', (e) => {
+        console.error('Video error:', video.error);
+        if (video.error) {
+            const errorMsg = video.error.message || 'Erreur de chargement de la vidéo';
+            console.error('Video error details:', {
+                code: video.error.code,
+                message: errorMsg
+            });
+        }
     });
     
-    observer.observe(video);
+    // Gestion du chargement
+    video.addEventListener('loadstart', () => {
+        console.log('Video loading started');
+    });
+    
+    video.addEventListener('canplay', () => {
+        console.log('Video can play');
+    });
+    
+    video.addEventListener('stalled', () => {
+        console.warn('Video stalled - network issue');
+    });
+    
+    video.addEventListener('waiting', () => {
+        console.log('Video waiting for data');
+    });
+    
+    // Ne pas précharger automatiquement - laisser l'utilisateur décider
+    // Preload only when user interacts
+    video.addEventListener('click', () => {
+        if (video.readyState === 0) {
+            video.load();
+        }
+    }, { once: true });
     
     // Handle play event
     video.addEventListener('play', () => {
@@ -243,15 +277,71 @@ function setupVideoPlayer() {
         if (overlay) overlay.style.display = 'flex';
     });
     
-    // Preload when user hovers over video (optional, for better UX)
-    const videoContainer = video.closest('.video-container');
-    if (videoContainer) {
-        videoContainer.addEventListener('mouseenter', () => {
-            if (video.readyState < 2) {
-                video.load();
-            }
-        }, { once: true });
+    // Setup all videos on the page
+    document.querySelectorAll('video').forEach(v => {
+        if (v !== video) {
+            v.addEventListener('error', (e) => {
+                console.error('Video error:', v.error);
+            });
+            
+            v.addEventListener('click', () => {
+                if (v.readyState === 0) {
+                    v.load();
+                }
+            }, { once: true });
+        }
+    });
+    
+    // Apply initial quality setting
+    applyVideoQuality(currentVideoQuality);
+}
+
+function setupVideoQualitySelectors() {
+    // Find the first video section to add the global quality selector
+    const videoSection = document.querySelector('.video-section');
+    if (!videoSection) return;
+    
+    // Check if selector already exists
+    if (document.querySelector('.video-quality-selector')) return;
+    
+    // Create quality selector
+    const selectorContainer = document.createElement('div');
+    selectorContainer.className = 'video-quality-selector';
+    selectorContainer.innerHTML = `
+        <label data-fr="Qualité vidéo :" data-en="Video quality:">Qualité vidéo :</label>
+        <select id="video-quality-select">
+            <option value="high" data-fr="Haute" data-en="High">Haute</option>
+            <option value="medium" data-fr="Moyenne" data-en="Medium" selected>Moyenne</option>
+            <option value="low" data-fr="Basse" data-en="Low">Basse</option>
+        </select>
+    `;
+    
+    // Insert at the beginning of the section
+    const sectionHeader = videoSection.querySelector('.section-header');
+    if (sectionHeader) {
+        sectionHeader.appendChild(selectorContainer);
     }
+    
+    // Setup event listener
+    const select = document.getElementById('video-quality-select');
+    if (select) {
+        select.value = currentVideoQuality;
+        select.addEventListener('change', (e) => {
+            currentVideoQuality = e.target.value;
+            localStorage.setItem('videoQuality', currentVideoQuality);
+            applyVideoQuality(currentVideoQuality);
+        });
+    }
+    
+    // Update language for selector
+    setLanguage(currentLang);
+}
+
+function applyVideoQuality(quality) {
+    const settings = videoQualitySettings[quality] || videoQualitySettings.medium;
+    document.querySelectorAll('video').forEach(video => {
+        video.style.filter = settings.filter;
+    });
 }
 
 // ================================
